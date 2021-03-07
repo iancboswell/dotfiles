@@ -1,0 +1,32 @@
+[user]
+	email = iancboswell@gmail.com
+	name = Ian Boswell
+[core]
+	editor = vim
+    pager = less -F -X
+[push]
+	default = upstream
+[alias]
+    st = status --short                          # Short status. Also skips instructions on manipulating the stage
+    sta = status --short --ignored               # Short status all that shows ignored files
+    ci = commit
+    br = branch
+    co = checkout
+    reco = !git reset --hard && git checkout     # USE WITH CAUTION
+    amend = commit --amend --no-edit
+    pa = pull --all                              # Only use this when you're sure there won't be conflicts
+    flush = !git checkout -f && git clean -xdf   # USE WITH CAUTION
+    rprune = remote prune                        # Requires a remote. Removes remote refspecs
+    prull = pull --prune
+    siff = diff --staged
+    ####
+    # The best graphical depictions of commit history and branch topology
+    # Just run 'em to see what they do.
+    lg = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(yellow)%h%C(reset) %C(bold red)<%an>%C(reset) - %s %C(green)(%ad)%C(reset)%C(yellow)%d%C(reset)'
+    lga = log --graph --all --abbrev-commit --decorate --date=relative --format=format:'%C(yellow)%h%C(reset) %C(bold red)<%an>%C(reset) - %s %C(green)(%ad)%C(reset)%C(yellow)%d%C(reset)'
+    lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(yellow)%h%C(reset) - %C(blue)%aD%C(reset) %C(green)(%ar)%C(reset)%C(yellow)%d%C(reset)%n''          %C(bold red)<%an>%C(reset) %s'
+    lga2 = log --graph --all --abbrev-commit --decorate --format=format:'%C(yellow)%h%C(reset) - %C(blue)%aD%C(reset) %C(green)(%ar)%C(reset)%C(yellow)%d%C(reset)%n''          %C(bold red)<%an>%C(reset) %s'
+    lg2s = log --name-status --graph --abbrev-commit --decorate --format=format:'%C(yellow)%h%C(reset) - %C(blue)%aD%C(reset) %C(green)(%ar)%C(reset)%C(yellow)%d%C(reset)%n''          %C(bold red)<%an>%C(reset) %s'
+
+[color]
+    ui = true                                    # Necessary for OS X

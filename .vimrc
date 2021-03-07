@@ -1,0 +1,9 @@
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set whichwrap=h,l
+set backspace=indent,eol,start
+set ruler
+set smartindent
+set autoindent
+set background=dark
