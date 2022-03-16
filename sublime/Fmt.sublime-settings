@@ -1,0 +1,8 @@
+{
+  "rules": [
+    {"selector": "source.go", "cmd": ["goimports"]},
+    {"selector": "source.go", "cmd": ["gofumpt"]},
+    {"selector": "source.rust", "cmd": ["rustfmt"]}
+  ],
+  "format_on_save": true,
+}

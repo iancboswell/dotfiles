@@ -1,5 +1,8 @@
 {
 	"auto_complete": false,
+	"folder_exclude_patterns": [
+		".mypy_cache"
+	],
 	"font_size": 10,
 	"hot_exit": false,
 	"ignored_packages":
@@ -20,4 +23,5 @@
 	"drag_text": false,
 	"remember_workspace": false,
 	"open_files_in_new_window": "always",
+	"update_check": false,
 }

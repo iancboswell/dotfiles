@@ -1,0 +1,4 @@
+{
+    // run black before saving document
+    "black_on_save": true
+}
